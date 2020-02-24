@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-24T01:26:28.508Z</updated>
+  <updated>2020-02-24T04:56:15.969Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux常用命令</title>
+    <link href="http://yoursite.com/2020/02/24/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2020/02/24/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <published>2020-02-24T03:42:49.000Z</published>
+    <updated>2020-02-24T04:56:15.969Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1-cd命令&quot;&gt;&lt;a href=&quot;#1-cd命令&quot; class=&quot;headerlink&quot; title=&quot;1. cd命令&quot;&gt;&lt;/a&gt;1. cd命令&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;命令格式&lt;/strong&gt;：cd
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>关于为什么要搭建一个博客</title>
@@ -32,29 +57,6 @@
           &lt;p&gt;在家闲的呗哈哈哈&lt;/p&gt;
 &lt;p&gt;主要是想到应该有这么个地方记录一下自己的成长，包括给&lt;strong&gt;&lt;em&gt;专业知识&lt;/em&gt;&lt;/strong&gt;做整理啊、以后万一做个&lt;strong&gt;&lt;em&gt;小项目&lt;/em&gt;&lt;/strong&gt;啊啥的。&lt;/p&gt;
 &lt;p&gt;再一个看着别人的博客网站喜
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2020/02/20/hello-world/"/>
-    <id>http://yoursite.com/2020/02/20/hello-world/</id>
-    <published>2020-02-20T04:01:00.754Z</published>
-    <updated>2020-02-20T04:01:00.755Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
         
       
     

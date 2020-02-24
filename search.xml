@@ -1,30 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Linux常用命令</title>
+    <url>/2020/02/24/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="1-cd命令"><a href="#1-cd命令" class="headerlink" title="1. cd命令"></a>1. cd命令</h2><p><strong>命令格式</strong>：cd &lt;路径&gt;</p>
+<p><strong>意义</strong>：cd是change directory 的缩写；cd命令后面跟一个路径，用于切换当前用户所在的路径，其中路径可以是<u>绝对路径</u>也可以是<u>相对路径</u>。</p>
+<p><strong>示例</strong>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /system/bin #表示切换到/system/bin路径下。</span><br><span class="line"></span><br><span class="line">cd logs #表示切换到logs路径下。</span><br><span class="line"></span><br><span class="line">cd / #表示切换到根目录。</span><br><span class="line"></span><br><span class="line">cd ../ #表示切换到上一层路径。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="2-ls命令"><a href="#2-ls命令" class="headerlink" title="2. ls命令"></a>2. ls命令</h2><p><strong>命令格式</strong>：ls &lt;参数&gt; &lt;路径&gt;</p>
+<p><strong>意义</strong>：ls是list的缩写；ls命令后面可以跟一个路径或参数，也可以不跟，表示列出路径或当前目录下的所有文件信息。最常用的的参数是“-l”，也就是“ls -l”命令。</p>
+<p><strong>示例</strong>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ls / #显示根目录下的所有文件及文件夹。</span><br><span class="line"></span><br><span class="line">ls -l /data #显示/data路径下的所有文件及文件夹的详细信息。</span><br><span class="line"></span><br><span class="line">ls -l #显示当前路径下的所有文件及文件夹的详细信息</span><br><span class="line"></span><br><span class="line">ls *l wc #显示当前目录下面的文件数量。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="3-cat命令"><a href="#3-cat命令" class="headerlink" title="3. cat命令"></a>3. cat命令</h2><p><strong>命令格式</strong>： cat &lt;文件&gt;</p>
+<p><strong>意义</strong>：cat是concatenate 的缩写。表示<u>读取文件内容及拼接文件</u>。</p>
+<p><strong>示例</strong>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat /sys/devices/system/cpu/online #读取 /sys/devices/system/cpu/路径下online文件内容。</span><br><span class="line"></span><br><span class="line">cat test.txt #读取当前路径下test.txt文件内容。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="4-rm命令"><a href="#4-rm命令" class="headerlink" title="4. rm命令"></a>4. rm命令</h2><p><strong>命令格式</strong>： rm &lt;文件&gt; 或 rm -r &lt;文件夹&gt;</p>
+<p><strong>意义</strong>：rm是remove 的缩写。用于<u>删除文件或文件夹</u>，常用参数-r -f，-r表示删除目录，也可以用于删除文件，-f表示强制删除，不需要确认。同样的，删除文件前需保证当前用户对当前路径有修改的权限。</p>
+<p><strong>示例</strong>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">rm -rf path #删除path。</span><br><span class="line"></span><br><span class="line">rm test.txt #删除test.txt。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="5-mkdir命令"><a href="#5-mkdir命令" class="headerlink" title="5. mkdir命令"></a>5. mkdir命令</h2><p><strong>命令格式</strong>： mkdir 文件夹</p>
+<p><strong>意义</strong>：mkdir是make directory 的缩写。用于<u>创建文件夹</u>。创建文件夹前需保证当前用户对当前路径有修改的权限。</p>
+<p><strong>示例</strong>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mkdir /data/path #在/data路径下创建path文件夹。</span><br><span class="line"></span><br><span class="line">mkdir -p a/b/c #参数 -p用于创建多级文件夹，这句命令表示在当前路径下创建文件夹a， 而a文件夹包含子文件夹b，b文件夹下又包含子文件夹c。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="6-cp命令"><a href="#6-cp命令" class="headerlink" title="6. cp命令"></a>6. cp命令</h2><p><strong>命令格式</strong>： cp &lt;文件&gt;&lt;目标文件&gt;或者cp -r&lt;文件夹&gt;&lt;目标文件夹&gt;</p>
+<p><strong>意义</strong>：cp是copy 的缩写。用于复制文件或文件夹。</p>
+<p><strong>示例</strong>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cp /data/logs /data/local/tmp/logs #复制/data路径下的logs到/data/local/tmp路径下。</span><br><span class="line"></span><br><span class="line">cp 1.sh /sdcard/ #复制当前路径下的1.sh到/sdcard下。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="7-kill命令"><a href="#7-kill命令" class="headerlink" title="7. kill命令"></a>7. kill命令</h2><p><strong>命令格式</strong>：kill PID码</p>
+<p><strong>意义</strong>：结束当前进程</p>
+<p><strong>示例</strong>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">先通过输入命令 ps au查看进程，找到需要终止进程的PID再通过<span class="built_in">kill</span> PID即可，如我这里想要终止的进程是vim test.py，查到的PID是3163，我们可以输入<span class="built_in">kill</span> 3163结束这个程序，如果结束不了，可以通过<span class="built_in">kill</span> -9 PID码强制结束，即kii -9 3163</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于为什么要搭建一个博客</title>
     <url>/2020/02/20/%E5%85%B3%E4%BA%8E%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<p>在家闲的呗哈哈哈</p>
 <p>主要是想到应该有这么个地方记录一下自己的成长，包括给<strong><em>专业知识</em></strong>做整理啊、以后万一做个<strong><em>小项目</em></strong>啊啥的。</p>
 <p>再一个看着别人的博客网站喜欢了呀（好吧我就是<strong><em>馋了</em></strong>）。</p>
 <p>OK，拖了好多天终于要开始啦~</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/02/20/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
   </entry>
 </search>
